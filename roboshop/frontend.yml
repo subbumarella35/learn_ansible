@@ -1,0 +1,9 @@
+- name: setup frontend
+  hosts: all
+  tasks:
+    - name: Install nginx
+      ansible.builtin.yum:
+        name: nginx
+        state: latest
+
+
