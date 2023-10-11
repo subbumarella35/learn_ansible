@@ -1,7 +1,4 @@
 - name: This is Called file
-  hosts: all
-  tasks:  
-      - name: we are calling file 
-        ansible.builtin.debug:
+  ansible.builtin.debug:
           msg: Hello world
         
