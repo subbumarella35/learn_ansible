@@ -1,3 +1,4 @@
- - name: This is sample
-   ansible.builtin.debug: 
-        msg: Hello world
+
+- name: demo on sample
+  ansible.builtin.debug:
+    msg : hello world
