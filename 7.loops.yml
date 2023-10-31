@@ -1,0 +1,11 @@
+- name: Looops
+  hosts: localhost
+  connection: local 
+  tasks:
+    - name: Loops concept
+      ansible.builtin.debug:  
+        msg: Furits are - {{item}}
+      loop:
+        - apple
+        - bannana
+        - grep
