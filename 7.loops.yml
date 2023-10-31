@@ -1,11 +1,11 @@
-- name: Looops
+- name: Loops concept
   hosts: localhost
-  connection: local 
-  tasks:
-    - name: Loops concept
-      ansible.builtin.debug:  
-        msg: Furits are - {{item}}
+  connection: local
+  tasks: 
+    - name: Loops Printing  
+      ansible.builtin.debug:
+        msg: cars are - {{item}}
       loop:
-        - apple
-        - bannana
-        - grep
+        - bmw
+        - scooda
+        - audi
