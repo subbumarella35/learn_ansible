@@ -5,7 +5,6 @@
     - name: Printing Hello universe
       ansible.builtin.debug:
         msg: Hello universe
-      when: what = "world"
 
 
  
