@@ -5,3 +5,4 @@
     - name: Printing Hello universe
       ansible.builtin.debug:
         msg: Hello universe1
+      when: role="devops"
