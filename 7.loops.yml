@@ -12,7 +12,7 @@
     
     - name: Fruits with Quantity
       ansible.builtin.debug:
-        msg: Furits are - {{}}
+        msg: Furits are - {{item.name}} Quantity is -{{item.Quantity}}
       loop:
         - {name: Apple, Quantity: 100}
         - {name: Orange, Quantity: 200}
