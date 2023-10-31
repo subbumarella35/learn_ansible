@@ -9,3 +9,12 @@
         - bmw
         - scooda
         - audi
+    
+    - name: Fruits with Quantity
+      ansible.builtin.debug:
+        msg: Furits are - {{}}
+      loop:
+        - {name: Apple, Quantity: 100}
+        - {name: Orange, Quantity: 200}
+        - {name: Goa, Quantity: 300}
+        - {name: Grape, Quantity: 400}
