@@ -6,3 +6,8 @@
       ansible.builtin.debug:
         msg: Hello universe1
       when: role=="devops"
+
+    - name: Printing India
+      ansible.builtin.debug:
+          msg: my India
+      when: role="ansible"
