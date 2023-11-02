@@ -1,0 +1,9 @@
+- name: Encrypted Text
+  hosts: localhost
+  tasks:  
+    - name: Read the file Content
+      ansible.builtin.shell: cat Sample.txt
+      register: file_content
+
+    - name: Encrypting the file data
+      a

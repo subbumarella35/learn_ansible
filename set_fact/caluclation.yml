@@ -1,0 +1,16 @@
+- name: Set fact example
+  hosts: localhost
+  tasks:
+     - name: Set First Number
+       set_fact:
+        number1: 10
+     - name: Set Second Number
+       set_fact:
+        number2: 20
+     - name: Sum is 
+       set_fact:
+         sum: "{{number1+number2}}"
+           
+     - name: result is 
+       ansible.builtin.debug:
+        msg: sum
