@@ -13,4 +13,4 @@
            
      - name: result is 
        ansible.builtin.debug:
-        msg: sum
+        msg: "{{sum}}"
