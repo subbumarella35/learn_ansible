@@ -6,4 +6,10 @@
       register: file_content
 
     - name: Encrypting the file data
-      a
+      set_fact:
+       encryptedContent: "{{file_content.stdout | password_hash('bcrypt','subbu') }}"
+
+    - name: Save the Encrypted file
+      ansible.builtin.copy:
+        source: "{{encryptedContent}}"
+        dest: encryptedContent.txt  
