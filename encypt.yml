@@ -7,7 +7,7 @@
 
     - name: Encrypting the file data
       set_fact:
-       encryptedContent: "{{file_content.stdout | password_hash('bcrypt','CteMzcoEmqM7y9W/') }}"
+       encryptedContent: "{{file_content.stdout | password_hash('bcrypt','h/KDN4fOqV0KKuRqNPp.iz') }}"
 
     - name: Save the Encrypted file
       ansible.builtin.copy:
