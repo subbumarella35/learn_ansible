@@ -12,4 +12,4 @@
     - name: Save the Encrypted file
       ansible.builtin.copy:
         src: "{{encryptedContent}}"
-        dest: encryptedContent.txt  
+        dest: /home/centos/learn_ansible/encryptedContent.txt  
