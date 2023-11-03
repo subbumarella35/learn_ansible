@@ -11,5 +11,5 @@
 
     - name: Save the Encrypted file
       ansible.builtin.copy:
-        source: "{{encryptedContent}}"
+        src: "{{encryptedContent}}"
         dest: encryptedContent.txt  
